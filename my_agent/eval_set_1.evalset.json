@@ -1,0 +1,445 @@
+{
+  "eval_set_id": "eval_set_1",
+  "name": "eval_set_1",
+  "eval_cases": [
+    {
+      "eval_id": "Hi",
+      "conversation": [
+        {
+          "invocation_id": "e-10aa4f83-4cac-480e-95ce-884bad746a7a",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Hi"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Hello! How can I help you today?",
+                "thought_signature": "EnsKeQFpFH0TBaL_z7D6nTiVeXf-O1X7WUvLEATHgQHrC4-UjLYUYE2NP018OcvFRmoH6DvV5IQi9XMV6ySl2eNd5Ewp4XyyxkhaewfywMJVnhcOHp26ReyVn23sxhMzSU49KjbD_dN2xn9gurq3qqU5mDWqH2vCvslu88Y="
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "root_agent",
+                "usage_metadata": {
+                  "candidates_token_count": 9,
+                  "prompt_token_count": 120,
+                  "prompt_tokens_details": [
+                    {
+                      "modality": "TEXT",
+                      "token_count": 120
+                    }
+                  ],
+                  "total_token_count": 129
+                },
+                "model_version": "gemini-3.5-flash-lite"
+              }
+            ]
+          },
+          "creation_timestamp": 1795094159.8015323
+        },
+        {
+          "invocation_id": "e-70821266-af4e-4aad-8f06-a458f1779366",
+          "user_content": {
+            "parts": [
+              {
+                "text": "tell me the name of user 1"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "The name of user 1 is Miles O'Hara.",
+                "thought_signature": "EnsKeQFpFH0Td1Dnjv7mGf6tE4O2eqBGNLBFnJGW0G8NTlWdvGwha7WQYwjgrF1eMFklbE1qdglaR7ZfJN5QvMAXhNajK5iE0lj-hS0wT4beo2ObE38yT9Pj4spV3WtNsMtEUN5Kacv1ae71ICmySutpKh5GiLJAz7M8I9k="
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "root_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call_1966815440597784783",
+                        "args": {
+                          "user_id": "1"
+                        },
+                        "name": "get_user_data"
+                      },
+                      "thought_signature": "EnsKeQFpFH0T6pRJFmQpioasFX0dyH9sZA1Kxso-Njw2eokBWXQWblRONthYMn05gZ68fbEDYOMnhnqSv9__BCxHyAFWBx3ofrNc22ThIdfVtgE-XmLN-yx1YLMb88g5k5hl0rvkzUtIfDnnjuOLt_BCj00eEP0rfEaResw="
+                    }
+                  ],
+                  "role": "model"
+                },
+                "usage_metadata": {
+                  "candidates_token_count": 20,
+                  "prompt_token_count": 139,
+                  "prompt_tokens_details": [
+                    {
+                      "modality": "TEXT",
+                      "token_count": 139
+                    }
+                  ],
+                  "total_token_count": 159
+                },
+                "model_version": "gemini-3.5-flash-lite"
+              },
+              {
+                "author": "root_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "call_1966815440597784783",
+                        "name": "get_user_data",
+                        "response": {
+                          "id": 1,
+                          "name": "Miles O&#x27;Hara",
+                          "company": "Bergnaum, Marvin and Welch",
+                          "username": "Mohammad.Sawayn",
+                          "email": "Elton40@yahoo.com",
+                          "address": "9648 Gutmann Hollow",
+                          "zip": "99399",
+                          "state": "Nevada",
+                          "country": "Dominican Republic",
+                          "phone": "499.217.8244 x4730",
+                          "photo": "https://json-server.dev/ai-profiles/15.png"
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              },
+              {
+                "author": "root_agent",
+                "usage_metadata": {
+                  "candidates_token_count": 12,
+                  "prompt_token_count": 302,
+                  "prompt_tokens_details": [
+                    {
+                      "modality": "TEXT",
+                      "token_count": 302
+                    }
+                  ],
+                  "total_token_count": 314
+                },
+                "model_version": "gemini-3.5-flash-lite"
+              }
+            ]
+          },
+          "creation_timestamp": 1795094199.603553
+        },
+        {
+          "invocation_id": "e-41aebcef-d1e5-44b3-aee9-574450165d26",
+          "user_content": {
+            "parts": [
+              {
+                "text": "tell me what is the favorite drink of user 1"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "I'm sorry, but the user data available for user 1 does not include information about their favorite drink.",
+                "thought_signature": "EnsKeQFpFH0TlWJSoM-e2EjftEOzKTqGrdfHBgY_m1y6WaiVptrYc9U7KRxsAFyOFy8HrDvs3YdsGK5CvyDTA5fsupgUbS-0qdRCq7HaEbv93EQNLVsAPi0xnPZZBZPdvXT5BV7As-GrICwVuNyAv2hrshxWC1MtiemoBEk="
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "root_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call_14271947946504008677",
+                        "args": {
+                          "user_id": "1"
+                        },
+                        "name": "get_user_data"
+                      },
+                      "thought_signature": "EnsKeQFpFH0Td__UeNa6q_lcwK76JUvV0OVD-JTaIi0bb3iZKFwzknIVGXglBlVOmTho2B5rxr4ncubolRiBeYjLflBjrFrdIFGxjHbfg_Iqm6JcmkAKPy7YjwnuSIo7gWd4UnwZq_cFOAdix1mNMtmBa4ryz0vgNCJGUhE="
+                    }
+                  ],
+                  "role": "model"
+                },
+                "usage_metadata": {
+                  "candidates_token_count": 20,
+                  "prompt_token_count": 327,
+                  "prompt_tokens_details": [
+                    {
+                      "modality": "TEXT",
+                      "token_count": 327
+                    }
+                  ],
+                  "total_token_count": 347
+                },
+                "model_version": "gemini-3.5-flash-lite"
+              },
+              {
+                "author": "root_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "call_14271947946504008677",
+                        "name": "get_user_data",
+                        "response": {
+                          "id": 1,
+                          "name": "Ardella Schimmel",
+                          "company": "Abshire, Nader and Bahringer",
+                          "username": "Jovany.Borer55",
+                          "email": "Kaia.Botsford57@yahoo.com",
+                          "address": "468 Jacobi Square",
+                          "zip": "88834-5039",
+                          "state": "Connecticut",
+                          "country": "Denmark",
+                          "phone": "457-413-0583",
+                          "photo": "https://json-server.dev/ai-profiles/2.png"
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              },
+              {
+                "author": "root_agent",
+                "usage_metadata": {
+                  "candidates_token_count": 23,
+                  "prompt_token_count": 486,
+                  "prompt_tokens_details": [
+                    {
+                      "modality": "TEXT",
+                      "token_count": 486
+                    }
+                  ],
+                  "total_token_count": 509
+                },
+                "model_version": "gemini-3.5-flash-lite"
+              }
+            ]
+          },
+          "creation_timestamp": 1795094272.8885055
+        },
+        {
+          "invocation_id": "e-91f18dec-a36b-4a5d-9ac6-f81b95cf4cd4",
+          "user_content": {
+            "parts": [
+              {
+                "text": "tell me what is the favorite drink of user 2"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "I'm sorry, but the user data available for user 2 does not include information about their favorite drink either.",
+                "thought_signature": "EnsKeQFpFH0TVHXUykBAdgmwcGhcnl_uSGf-u8Yw9zpebxTQssbpw-0cGi8-3lufFOfmEvJz9aXmrYRHAl4pmzAdHcR1SDf0mZg9Ktcsb1XNUrq1FDGHzsE4afYMGSVewKrNGNuJ4caRyAqfXGf-2OEKt6zCxEvskdiy6h4="
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "root_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call_6337245074786372518",
+                        "args": {
+                          "user_id": "2"
+                        },
+                        "name": "get_user_data"
+                      },
+                      "thought_signature": "EnsKeQFpFH0TeikrxxxwiUGIYvsBWzq8EILHjoy0uSv0ztR1xk0TNkx7w6WzNQCKaHl_tA9FG1rTJLn7OWikPknMCbyLoc4IR5MH7DsAWD1HE-UyeIDMoj-Tv4qeJSidcPOiZ2BYc30Tzt0uPc3iq1ewWhwRejvlrdrgQWU="
+                    }
+                  ],
+                  "role": "model"
+                },
+                "usage_metadata": {
+                  "candidates_token_count": 20,
+                  "prompt_token_count": 522,
+                  "prompt_tokens_details": [
+                    {
+                      "modality": "TEXT",
+                      "token_count": 522
+                    }
+                  ],
+                  "total_token_count": 542
+                },
+                "model_version": "gemini-3.5-flash-lite"
+              },
+              {
+                "author": "root_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "call_6337245074786372518",
+                        "name": "get_user_data",
+                        "response": {
+                          "id": 2,
+                          "name": "Evert Brakus",
+                          "company": "Lubowitz - Heathcote",
+                          "username": "Valentin_Klocko65",
+                          "email": "Mariane56@gmail.com",
+                          "address": "9933 Hillside Avenue",
+                          "zip": "83192",
+                          "state": "Pennsylvania",
+                          "country": "Norway",
+                          "phone": "951-364-6808 x7891",
+                          "photo": "https://json-server.dev/ai-profiles/5.png"
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              },
+              {
+                "author": "root_agent",
+                "usage_metadata": {
+                  "candidates_token_count": 24,
+                  "prompt_token_count": 677,
+                  "prompt_tokens_details": [
+                    {
+                      "modality": "TEXT",
+                      "token_count": 677
+                    }
+                  ],
+                  "total_token_count": 701
+                },
+                "model_version": "gemini-3.5-flash-lite"
+              }
+            ]
+          },
+          "creation_timestamp": 1795094310.54276
+        },
+        {
+          "invocation_id": "e-93b24213-8211-4401-b717-34b2144fc9a6",
+          "user_content": {
+            "parts": [
+              {
+                "text": "tell me the name of user 1"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "The name of user 1 is Russell Schmeler.",
+                "thought_signature": "EnsKeQFpFH0Tb4tp5NWg_2sNzrMoIUIWxpfRq7taUOw1f6hQNe0aYHQacGjcs1C_P7WWXfZMdUwUp_gtMK9PbzQWIE9pG5Vp3Pg8RBSNjvuREVPS214MMoprTAPRNltOFyzPtZCex3OoiSET9C4NdAv87Ln4PFyD1nlWR50="
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "root_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call_9475718806553619256",
+                        "args": {
+                          "user_id": "1"
+                        },
+                        "name": "get_user_data"
+                      },
+                      "thought_signature": "EnsKeQFpFH0TruXFDV9W1UEd5GxrHbnqtWmZfUObevir9-buakVnkPrpiysqyk_OpD2BkrKjWXLYXzFgXpT229HRQV-pFAZF3f3lREWggtnJdqdpweq49lzONXaNEzfnMY-gLxSb3fqzB5odZYUYET97bkcCv50cQmnJET8="
+                    }
+                  ],
+                  "role": "model"
+                },
+                "usage_metadata": {
+                  "candidates_token_count": 20,
+                  "prompt_token_count": 711,
+                  "prompt_tokens_details": [
+                    {
+                      "modality": "TEXT",
+                      "token_count": 711
+                    }
+                  ],
+                  "total_token_count": 731
+                },
+                "model_version": "gemini-3.5-flash-lite"
+              },
+              {
+                "author": "root_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "call_9475718806553619256",
+                        "name": "get_user_data",
+                        "response": {
+                          "id": 1,
+                          "name": "Russell Schmeler",
+                          "company": "Stiedemann, Roob and Haley",
+                          "username": "Keira_Weimann",
+                          "email": "Monserrate3@hotmail.com",
+                          "address": "44459 Sheila Point",
+                          "zip": "96848",
+                          "state": "California",
+                          "country": "Thailand",
+                          "phone": "852.557.1479 x750",
+                          "photo": "https://json-server.dev/ai-profiles/40.png"
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              },
+              {
+                "author": "root_agent",
+                "usage_metadata": {
+                  "candidates_token_count": 11,
+                  "prompt_token_count": 866,
+                  "prompt_tokens_details": [
+                    {
+                      "modality": "TEXT",
+                      "token_count": 866
+                    }
+                  ],
+                  "total_token_count": 877
+                },
+                "model_version": "gemini-3.5-flash-lite"
+              }
+            ]
+          },
+          "creation_timestamp": 1795094480.1024365
+        }
+      ],
+      "session_input": {
+        "app_name": "my_agent",
+        "user_id": "user"
+      },
+      "creation_timestamp": 1795096215.291139
+    }
+  ],
+  "creation_timestamp": 1795096183.436744
+}
