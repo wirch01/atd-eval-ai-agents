@@ -1,0 +1,152 @@
+{
+  "eval_set_id": "eval_set_1",
+  "name": "eval_set_1",
+  "eval_cases": [
+    {
+      "eval_id": "4_pilsener",
+      "conversation": [
+        {
+          "invocation_id": "e-3d55eecd-c486-4a6e-bb77-6969e7102104",
+          "user_content": {
+            "parts": [
+              {
+                "text": "4 pilsener"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "I've got 4 Havel Pilsners for you! That's order #A-1001, bringing your tab total to €19.20.",
+                "thought_signature": "EnsKeQFpFH0TqXAu5gPuG8xKIa6lb_EfM5KyjKsIpUGL28aA2VNuQYcXp5eaHWbrcGlbS_LZTMQusvTbLM0MjwT8wGzXfnQz0D9hdd8R6XNITG8sexCZVQFI0qSrcD97bPUFLNXrVJk0bg9qdcRpz-aKqfEubtK0OuokZeo="
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "root_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call_3008278277209291081",
+                        "args": {
+                          "quantity": 4,
+                          "size": "0.5",
+                          "drink": "Havel Pilsner"
+                        },
+                        "name": "place_order"
+                      },
+                      "thought_signature": "EnsKeQFpFH0TICtuxuVNAiMIN_OstQf_w5AKeGkwjUYviNdzOVfV1vurdBWgVBAnCOa0I6wfRZVkoJZLR0iGWfpiifPMBzdL_kWTSYTpa69adOqgy06I8k0oRwxTZnhaHkUe7Bvsi7RuI27tK8f1lxftNj2Wk1Se9ia2Vtw="
+                    }
+                  ],
+                  "role": "model"
+                },
+                "usage_metadata": {
+                  "candidates_token_count": 31,
+                  "prompt_token_count": 1015,
+                  "prompt_tokens_details": [
+                    {
+                      "modality": "TEXT",
+                      "token_count": 1015
+                    }
+                  ],
+                  "total_token_count": 1046
+                },
+                "model_version": "gemini-3.5-flash-lite"
+              },
+              {
+                "author": "root_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "call_3008278277209291081",
+                        "name": "place_order",
+                        "response": {
+                          "order_id": "A-1001",
+                          "drink": "Havel Pilsner",
+                          "size": "0.5",
+                          "quantity": 4,
+                          "line_total": 19.2,
+                          "tab_total": 19.2,
+                          "currency": "EUR"
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              },
+              {
+                "author": "root_agent",
+                "usage_metadata": {
+                  "candidates_token_count": 36,
+                  "prompt_token_count": 1112,
+                  "prompt_tokens_details": [
+                    {
+                      "modality": "TEXT",
+                      "token_count": 1112
+                    }
+                  ],
+                  "total_token_count": 1148
+                },
+                "model_version": "gemini-3.5-flash-lite"
+              }
+            ]
+          },
+          "creation_timestamp": 1795100050.6317961
+        },
+        {
+          "invocation_id": "e-2f915a51-9fd0-46de-b23e-46da782943b8",
+          "user_content": {
+            "parts": [
+              {
+                "text": "yes"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "How can I help you? Would you like anything else, or are you ready to settle your tab?",
+                "thought_signature": "EnsKeQFpFH0TmZVXTk0orX4PmVL5scyKOBZuNjvNqKxW7l1EaTmDe9W0hEzFxf62_E0y5rgImWdmLlKZKCfOl7U5Q5vcvlN2pWKTtOOsDfQyUmQ2iSC1q9IQMwN5H7DaSVHsEWbBEtZjhgA-vs7Ph2qMk_5eD4eY55IDF9w="
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "root_agent",
+                "usage_metadata": {
+                  "candidates_token_count": 21,
+                  "prompt_token_count": 1151,
+                  "prompt_tokens_details": [
+                    {
+                      "modality": "TEXT",
+                      "token_count": 1151
+                    }
+                  ],
+                  "total_token_count": 1172
+                },
+                "model_version": "gemini-3.5-flash-lite"
+              }
+            ]
+          },
+          "creation_timestamp": 1795100064.4734032
+        }
+      ],
+      "session_input": {
+        "app_name": "beer_agent",
+        "user_id": "user"
+      },
+      "creation_timestamp": 1795100082.670319
+    }
+  ],
+  "creation_timestamp": 1795100026.8198497
+}
